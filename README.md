@@ -1,2 +1,13 @@
-# cat-enetgy
-training project
+# Личный проект «Cat-energy»
+
+Учебный проект: Интернет-магазин фитнес еды для котиков.
+
+## Дизайн 
+
+[Это учебный макет Пинк  от HTMLAcademy](https://up.htmlacademy.ru/adaptive/16/project/cat-energy).
+
+## Запуст и управления 
+
+- Установка всех зависимостей: `npm install`
+- Старт сервера для локальной разработки: `npm start`
+- Запуск зборки для деплоя: `npm run build`
