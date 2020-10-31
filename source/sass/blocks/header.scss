@@ -1,0 +1,29 @@
+.main-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-nav__box-logo {
+  position: relative;
+}
+
+.site-list {
+  @include list-reset;
+
+  text-align: center;
+}
+
+.site-list__items {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__link,
+.site-list__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
