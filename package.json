@@ -33,6 +33,7 @@
     "build": "gulp build",
     "start": "gulp start",
     "images": "gulp images",
+    "contentImg": "gulp files",
     "webp": "gulp webp",
     "copy": "gulp copy",
     "clean": "gulp del",
