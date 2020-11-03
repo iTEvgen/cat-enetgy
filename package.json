@@ -33,7 +33,9 @@
     "build": "gulp build",
     "start": "gulp start",
     "images": "gulp images",
+    "contentImg": "gulp files",
     "webp": "gulp webp",
+    "contentWebp": "gulp contentWebp",
     "copy": "gulp copy",
     "clean": "gulp del",
     "sprite": "gulp svgstore"
