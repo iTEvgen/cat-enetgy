@@ -1,0 +1,67 @@
+.advantage {
+  margin-bottom: 41px;
+}
+
+.advantage__header {
+  margin-bottom: 29px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  color: #111111;
+}
+
+.advantage__items {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.advantage__box-image {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--img-one {
+    background-image: url("../../img/advantage-1@1x.webp");
+    background-size: 26px 29px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-1@2x.webp");
+    }
+  }
+
+  &--img-two {
+    background-image: url("../../img/andvantage-2@1x.webp");
+    background-size: 29px 31px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/andvantage-2@2x.webp");
+    }
+  }
+
+  &--img-three {
+    background-image: url("../../img/advantage-3@1x.webp");
+    background-size: 23px 30px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-3@2x.webp");
+    }
+  }
+
+  &--img-four {
+    background-image: url("../../img/advantage-4@1x.webp");
+    background-size: 26px 31px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/advantage-4@2x.webp");
+    }
+  }
+}
+
+.advantage__text {
+  padding-top: 1px;
+}
