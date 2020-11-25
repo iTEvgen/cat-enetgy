@@ -3,12 +3,18 @@
 }
 
 .advantage__header {
+  @include margin-reset;
+
   margin-bottom: 29px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
   color: #111111;
+}
+
+.advantage__list {
+  @include list-reset;
 }
 
 .advantage__items {
@@ -63,5 +69,7 @@
 }
 
 .advantage__text {
+  @include margin-reset;
+
   padding-top: 1px;
 }
