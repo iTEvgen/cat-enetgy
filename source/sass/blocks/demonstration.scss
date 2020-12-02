@@ -89,7 +89,7 @@
 }
 
 .demonstration__box-img {
-  align-self: start;
+  align-self: center;
   margin-bottom: 27px;
 }
 
@@ -112,10 +112,12 @@
 }
 
 .demonstration__control-bar {
+  position: relative;
   width: 84px;
   height: 14px;
   padding: 3px 5px;
   background-color: #ffffff;
+  background-clip: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   box-sizing: border-box;
@@ -123,10 +125,15 @@
 
 .demonstration__control-item {
   display: block;
+  max-width: 100%;
+  height: 100%;
   width: 50%;
-  height: 6px;
   background-color: #68b738;
   border-radius: 6px;
+
+  &--checked {
+    width: 100%;
+  }
 }
 
 .demonstration__box-img--close {
