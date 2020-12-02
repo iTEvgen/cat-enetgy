@@ -18,52 +18,56 @@
 }
 
 .advantage__items {
-  display: flex;
+  position: relative;
+  min-height: 60px;
   margin-bottom: 20px;
-}
+  padding-left: 80px;
 
-.advantage__box-image {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-  background-color: #68b738;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
-  &--img-one {
-    background-image: url("../../img/advantage-1@1x.webp");
+  &--img-one::before {
+    background-image: url("../img/advantage-1@1x.webp");
     background-size: 26px 29px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/advantage-1@2x.webp");
+      background-image: url("../img/advantage-1@2x.webp");
     }
   }
 
-  &--img-two {
-    background-image: url("../../img/andvantage-2@1x.webp");
+  &--img-two::before {
+    background-image: url("../img/andvantage-2@1x.webp");
     background-size: 29px 31px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/andvantage-2@2x.webp");
+      background-image: url("../img/andvantage-2@2x.webp");
     }
   }
 
-  &--img-three {
-    background-image: url("../../img/advantage-3@1x.webp");
+  &--img-three::before {
+    background-image: url("../img/advantage-3@1x.webp");
     background-size: 23px 30px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/advantage-3@2x.webp");
+      background-image: url("../img/advantage-3@2x.webp");
     }
   }
 
-  &--img-four {
-    background-image: url("../../img/advantage-4@1x.webp");
+  &--img-four::before {
+    background-image: url("../img/advantage-4@1x.webp");
     background-size: 26px 31px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/advantage-4@2x.webp");
+      background-image: url("../img/advantage-4@2x.webp");
     }
   }
 }
