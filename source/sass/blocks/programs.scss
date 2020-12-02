@@ -8,10 +8,14 @@
   text-align: center;
   color: #ffffff;
 
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.webp");
+  }
 }
 
 .program__header {
