@@ -1,0 +1,229 @@
+.product-catalog {
+  padding-top: 15px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.product-catalog__header {
+  @include margin-reset;
+
+  margin-left: 20px;
+  margin-bottom: 28px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  color: #111111;
+}
+
+.list-catalog {
+  @include list-reset;
+}
+
+.list-catalog__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #e6e6e6;
+
+  &--last-item {
+    margin-bottom: 0;
+    padding-top: 27px;
+  }
+}
+
+.list-catalog__link {
+  display: flex;
+  text-decoration: none;
+}
+
+.list-catalog__items picture {
+  flex-basis: 50%;
+}
+
+.list-catalog__img {
+  display: block;
+}
+
+.list-catalog__box {
+  flex-basis: 50%;
+  padding-top: 21px;
+}
+
+.list-catalog__header {
+  @include margin-reset;
+
+  margin-bottom: 13px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.list-catalog__table {
+  width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  color: #444444;
+  border-collapse: collapse;
+}
+
+.list-catalog__table td:last-child,
+.list-product__table td:last-child {
+  text-align: right;
+}
+
+.list-catalog__button {
+  padding: 10px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  background-color: #68b738;
+
+  &--bagr {
+    color: #444444;
+    background-color: #f2f2f2;
+  }
+}
+
+.plus {
+  position: relative;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 22px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(0deg);
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
+}
+
+.list-catalog__desc {
+  @include margin-reset;
+
+  margin-bottom: 8px;
+  align-self: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.list-catalog__text {
+  margin-bottom: 21px;
+  align-self: center;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.additional-products {
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+
+.list-product {
+  @include list-reset;
+
+  margin-bottom: 39px;
+}
+
+.list-product__items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+  padding-top: 13px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional-products__header {
+  position: relative;
+  margin-bottom: 34px;
+  margin-left: 0;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+.list-product__header {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+
+.list-product__table {
+  margin-bottom: 14px;
+  line-height: 14px;
+  border-collapse: collapse;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-evenly;
+  align-items: center;
+  // min-height: 289px;
+  padding-top: 64px;
+  padding-bottom: 26px;
+  text-align: center;
+  background-color: #70b447;
+  background-image: url("../img/gift-photo-mobile@1x.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.webp");
+  }
+}
+
+.promo svg {
+  margin-bottom: 47px;
+  fill: #ffffff;
+}
+
+.promo__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
