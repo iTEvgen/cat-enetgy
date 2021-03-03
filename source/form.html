@@ -32,6 +32,110 @@
       <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
+  <main class="main-form">
+    <h1 class="visually-hidden">Главная страница с подбором программы и контактными данными</h1>
+    <section class="forma">
+      <h2 class="forma-header">Подбор программы</h2>
+      <p class="forma-slogan">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <form class="program-form" method="GET" action="https://echo.htmlacademy.ru">
+        <div class="">
+          <fieldset class="program-form__block">
+            <legend class="program-form__head">Характеристики кота</legend>
+            <p class="program-form__items-text">
+              <label class="program-form__title" for="name-cat-id">Имя:*</label>
+              <input class="program-form__text" id="name-cat-id" type="text" name="name-cat" placeholder="Барсик">
+            </p>
+            <p class="program-form__items-text">
+              <label class="program-form__title" for="weight-cat-id">Вес (кг):*</label>
+              <input class="program-form__text" id="weight-cat-id" type="text" name="weight-cat" placeholder="7">
+            </p>
+            <p class="program-form__items-text">
+              <label class="program-form__title" for="age-cat-id">Возраст (лет):</label>
+              <input class="program-form__text" id="age-cat-id" type="text" name="age-cat" placeholder="7">
+            </p>
+          </fieldset>
+        </div>
+        <div class="">
+          <fieldset class="program-form__block">
+            <legend class="program-form__head">Программа для кота</legend>
+            <ul class="program-form__list">
+              <li class="program-form__items">
+                <input class="program-form__radio" id="slimming-id" type="radio" name="program" value="slimming" checked>
+                <label class="program-form__text" for="slimming-id">Похудение</label>
+              </li>
+              <li class="program-form__items">
+                <input class="program-form__radio" id="weight-gain-id" type="radio" name="program" value="weight-gain">
+                <label class="program-form__text" for="weight-gain-id">Набор массы</label>
+              </li>
+              <li class="program-form__items">
+                <input class="program-form__radio" id="none-id" type="radio" name="program" value=none">
+                <label class="program-form__text" for="none-id">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="program-form__block">
+            <legend class="program-form__head">Контактные данные (владельца кота)</legend>
+            <p class="program-form__items-text">
+              <label class="program-form__title" for="email-id">E-mail:*</label>
+              <input class="program-form__text" id="email-id" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="program-form__items-text">
+              <label class="program-form__title" for="telephone-id">Телефон:*</label>
+              <input class="program-form__text" id="telephone-id" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="program-form__block">
+            <legend class="program-form__head">Комментарий</legend>
+            <textarea class="program-form__comment" name="comments" cols="40" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="program-form__block">
+            <legend class="program-form__head">Дополнительно</legend>
+            <ul class="program-form__list">
+              <li class="program-form__items">
+                <input class="program-form__checkbox" id="sweetener-id" type="checkbox" name="sweetener" checked>
+                <label class="program-form__text" for="sweetener-id">Сахарозаменитель</label>
+              </li>
+              <li class="program-form__items">
+                <input class="program-form__checkbox" id="drinking-water-id" type="checkbox" name="drinking-water">
+                <label class="program-form__text" for="drinking-water-id">Питьевая вода</label>
+              </li>
+              <li class="program-form__items">
+                <input class="program-form__checkbox" id="milk-id" type="checkbox" name="milk">
+                <label class="program-form__text" for="milk-id">Молоко</label>
+              </li>
+              <li class="program-form__items">
+                <input class="program-form__checkbox" id="vitamins-id" type="checkbox" name="vitamins">
+                <label class="program-form__text" for="vitamins-id">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div>
+          <button class="program-form__buttom" type="submit">Отправить заявку</button>
+          <span class="program-form__required">
+            <sup>*</sup>
+            — Обязательные поля
+          </span>
+        </div>
+      </form>
+    </section>
+    <section class="address address--catalog">
+      <div class="address__grid wrapper">
+        <p>приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <address>ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
+      </div>
+      <picture>
+        <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+        <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="100%" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
+    </section>
+  </main>
   <footer class="main-footer">
     <div class="maim-footer__grid wrapper">
       <div class="main-footer__box-logo box-logo">
