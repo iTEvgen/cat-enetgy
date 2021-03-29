@@ -36,11 +36,11 @@
     <h1 class="visually-hidden">Главная страница с подбором программы и контактными данными</h1>
     <section class="forma">
       <h2 class="forma-header">Подбор программы</h2>
-      <p class="forma-slogan">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <p class="forma-slogan">Заполните анкету и мы подберем<br>  программу питания для вашего кота</p>
       <form class="program-form" method="GET" action="https://echo.htmlacademy.ru">
-        <div class="">
+        <div class="program-form__container program-form__container--border wrapper">
           <fieldset class="program-form__block">
-            <legend class="program-form__head">Характеристики кота</legend>
+            <legend class="program-form__head visually-hidden">Характеристики кота</legend>
             <p class="program-form__items-text">
               <label class="program-form__title" for="name-cat-id">Имя:*</label>
               <input class="program-form__text" id="name-cat-id" type="text" name="name-cat" placeholder="Барсик">
@@ -55,69 +55,75 @@
             </p>
           </fieldset>
         </div>
-        <div class="">
+        <div class="program-form__container program-form__container--border program-form__container--margin wrapper">
           <fieldset class="program-form__block">
-            <legend class="program-form__head">Программа для кота</legend>
+            <legend class="program-form__head visually-hidden">Программа для кота</legend>
             <ul class="program-form__list">
               <li class="program-form__items">
-                <input class="program-form__radio" id="slimming-id" type="radio" name="program" value="slimming" checked>
-                <label class="program-form__text" for="slimming-id">Похудение</label>
+                <input class="program-form__radio visually-hidden" id="slimming-id" type="radio" name="program" value="slimming" checked>
+                <label class="program-form__title program-form__title--radio" for="slimming-id">Похудение</label>
               </li>
               <li class="program-form__items">
-                <input class="program-form__radio" id="weight-gain-id" type="radio" name="program" value="weight-gain">
-                <label class="program-form__text" for="weight-gain-id">Набор массы</label>
+                <input class="program-form__radio visually-hidden" id="weight-gain-id" type="radio" name="program" value="weight-gain">
+                <label class="program-form__title program-form__title--radio" for="weight-gain-id">Набор массы</label>
               </li>
               <li class="program-form__items">
-                <input class="program-form__radio" id="none-id" type="radio" name="program" value=none">
-                <label class="program-form__text" for="none-id">Не знаю (Нужен ваш совет)</label>
+                <input class="program-form__radio visually-hidden" id="none-id" type="radio" name="program" value=none">
+                <label class="program-form__title program-form__title--radio" for="none-id">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div>
+        <div class="program-form__container program-form__container--margin wrapper">
           <fieldset class="program-form__block">
-            <legend class="program-form__head">Контактные данные (владельца кота)</legend>
+            <legend class="program-form__head program-form__head--line-1">Контактные данные<br> (владельца кота)</legend>
             <p class="program-form__items-text">
               <label class="program-form__title" for="email-id">E-mail:*</label>
-              <input class="program-form__text" id="email-id" type="email" name="email" placeholder="kuklachev@gmail.com">
+              <input class="program-form__text program-form__text--icon" id="email-id" type="email" name="email" placeholder="kuklachev@gmail.com">
+              <svg class="icon-mail" role="img" focusable="false" width="17" height="13">
+                <use xlink:href="#icon-mail">
+              </svg>
             </p>
-            <p class="program-form__items-text">
+            <p class="program-form__items-text program-form__items-text--margin">
               <label class="program-form__title" for="telephone-id">Телефон:*</label>
-              <input class="program-form__text" id="telephone-id" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+              <input class="program-form__text program-form__text--icon" id="telephone-id" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+              <svg class="icon-phone" role="img" focusable="false" width="20" height="20">
+                <use xlink:href="#icon-phone">
+              </svg>
             </p>
           </fieldset>
         </div>
-        <div>
+        <div class="program-form__container program-form__container--margin wrapper">
           <fieldset class="program-form__block">
-            <legend class="program-form__head">Комментарий</legend>
-            <textarea class="program-form__comment" name="comments" cols="40" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <legend class="program-form__head program-form__head--margin program-form__head--line-2">Комментарий</legend>
+            <textarea class="program-form__comment" name="comments" cols="20" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
-        <div>
+        <div class="program-form__container wrapper">
           <fieldset class="program-form__block">
-            <legend class="program-form__head">Дополнительно</legend>
-            <ul class="program-form__list">
+            <legend class="program-form__head program-form__head--line-3">Дополнительно</legend>
+            <ul class="program-form__list program-form__list--margin">
               <li class="program-form__items">
-                <input class="program-form__checkbox" id="sweetener-id" type="checkbox" name="sweetener" checked>
-                <label class="program-form__text" for="sweetener-id">Сахарозаменитель</label>
+                <input class="program-form__checkbox visually-hidden" id="sweetener-id" type="checkbox" name="sweetener" checked>
+                <label class="program-form__title program-form__title--checkbox" for="sweetener-id">Сахарозаменитель</label>
               </li>
               <li class="program-form__items">
-                <input class="program-form__checkbox" id="drinking-water-id" type="checkbox" name="drinking-water">
-                <label class="program-form__text" for="drinking-water-id">Питьевая вода</label>
+                <input class="program-form__checkbox visually-hidden" id="drinking-water-id" type="checkbox" name="drinking-water">
+                <label class="program-form__title program-form__title--checkbox" for="drinking-water-id">Питьевая вода</label>
               </li>
               <li class="program-form__items">
-                <input class="program-form__checkbox" id="milk-id" type="checkbox" name="milk">
-                <label class="program-form__text" for="milk-id">Молоко</label>
+                <input class="program-form__checkbox visually-hidden" id="milk-id" type="checkbox" name="milk">
+                <label class="program-form__title program-form__title--checkbox" for="milk-id">Молоко</label>
               </li>
               <li class="program-form__items">
-                <input class="program-form__checkbox" id="vitamins-id" type="checkbox" name="vitamins">
-                <label class="program-form__text" for="vitamins-id">Витамины</label>
+                <input class="program-form__checkbox visually-hidden" id="vitamins-id" type="checkbox" name="vitamins">
+                <label class="program-form__title program-form__title--checkbox" for="vitamins-id">Витамины</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div>
-          <button class="program-form__buttom" type="submit">Отправить заявку</button>
+        <div class="program-form__container program-form__container--margin program-form__container--grid wrapper">
+          <button class="program-form__button" type="submit">Отправить заявку</button>
           <span class="program-form__required">
             <sup>*</sup>
             — Обязательные поля
