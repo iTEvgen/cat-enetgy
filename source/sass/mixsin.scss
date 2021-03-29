@@ -11,3 +11,9 @@
 @mixin padding-reset() {
   padding: 0;
 }
+
+@mixin fieldset-reset() {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
