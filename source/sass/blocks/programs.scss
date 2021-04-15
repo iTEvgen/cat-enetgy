@@ -5,7 +5,6 @@
   margin-bottom: 23px;
   padding: 27px 20px 0;
   font-family: "Oswald", sans-serif;
-  text-align: center;
   color: #ffffff;
 
   background-image: url("../img/index-background-mobile@1x.webp");
@@ -38,7 +37,26 @@
   width: 280px;
   padding: 11px 0 11px;
   color: inherit;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #68b738;
+}
+
+@media (min-width: $table-width) {
+  .programs {
+    align-items: flex-start;
+    padding: 60px 30px 0 60px;
+    background-image: none;
+    color: #000000;
+  }
+
+  .program__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .programs__wrapp-img {
+    order: 3; 
+  }
 }
