@@ -26,6 +26,10 @@
   font-weight: normal;
 }
 
+.program__header br {
+  display: none;
+}
+
 .programs__text {
   @include margin-reset;
 
@@ -52,11 +56,35 @@
   }
 
   .program__header {
+    margin-left: 87px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
   }
 
+  .program__header br {
+    display: inline;
+  }
+
+  .programs__text {
+    margin-left: 87px;
+    margin-bottom:48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program__link {
+    width: 245px;
+    margin-left: 89px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
   .programs__wrapp-img {
+    align-self: center;
     order: 3;
   }
 }
