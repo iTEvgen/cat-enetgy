@@ -46,7 +46,7 @@
 @media (min-width: $table-width) {
   .programs {
     align-items: flex-start;
-    padding: 60px 30px 0 60px;
+    padding: 53px 30px 0 30px;
     background-image: none;
     color: #000000;
   }
@@ -57,6 +57,6 @@
   }
 
   .programs__wrapp-img {
-    order: 3; 
+    order: 3;
   }
 }
