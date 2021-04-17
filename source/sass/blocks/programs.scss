@@ -7,10 +7,10 @@
   font-family: "Oswald", sans-serif;
   color: #ffffff;
 
-  background-image: url("../img/index-background-mobile@1x.webp");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto;
+  background-image: url("../img/index-background-mobile@1x.webp"), url("../img/backgound-matte.webp");
+  background-repeat: no-repeat, repeat-x;
+  background-position: top, top;
+  background-size: 100% auto, 100px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.webp");
@@ -20,6 +20,7 @@
 .program__header {
   @include margin-reset;
 
+  max-width: 350px;
   margin-bottom: 24px;
   font-size: 36px;
   line-height: 36px;
@@ -44,6 +45,12 @@
   background-color: #68b738;
 }
 
+@media (min-width: $mobile-height) {
+  .programs {
+    background-size: 400px, 381px;
+  }
+}
+
 @media (min-width: $table-width) {
   .programs {
     align-items: flex-start;
@@ -54,7 +61,7 @@
   }
 
   .program__header {
-    width: 450px;
+    max-width: 450px;
     margin-left: 87px;
     margin-bottom: 41px;
     font-size: 60px;
