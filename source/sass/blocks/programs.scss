@@ -13,7 +13,7 @@
   background-size: 100% auto, 100px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.webp");
+    background-image: url("../img/index-background-mobile@2x.webp"), url("../img/backgound-matte.webp");
   }
 }
 
