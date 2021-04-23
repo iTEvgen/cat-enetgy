@@ -102,12 +102,16 @@
 }
 
 @media (min-width: $table-width) {
+  .products {
+    margin-bottom: 45px;
+  }
+
   .products article:first-of-type {
     margin-bottom: 30px;
   }
 
   .product {
-    padding: 70px 0 53px 53px;
+    padding: 76px 0 53px 53px;
 
     &::after {
       top: 89px;
@@ -138,7 +142,7 @@
     @include padding-reset;
 
     width: 384px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .product__header {
