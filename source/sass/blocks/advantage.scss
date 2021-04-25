@@ -121,34 +121,34 @@
     &:nth-child(even) {
       margin-right: 0;
     }
+  }
 
-    .advantage__number {
-      position: absolute;
-      top: -40px;
-      display: block;
-      font-family: "Oswald", sans-serif;
-      font-size: 281px;
-      line-height: 281px;
-      height: 281px;
-      color: #f2f2f2;
-      user-select: none;
-      z-index: -1;
+  .advantage__number {
+    position: absolute;
+    top: -40px;
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    height: 281px;
+    color: #f2f2f2;
+    user-select: none;
+    z-index: -1;
 
-      &--one {
-        right: 20px;
-      }
+    &--one {
+      right: 20px;
+    }
 
-      &--two {
-        right: 5px;
-      }
+    &--two {
+      right: 5px;
+    }
 
-      &--three {
-        right: 3px;
-      }
+    &--three {
+      right: 3px;
+    }
 
-      &--four {
-        right: 2px;
-      }
+    &--four {
+      right: 2px;
     }
   }
 }
