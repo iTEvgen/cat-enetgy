@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-// var imagemin = require("gulp-imagemin");
+var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var plumber = require("gulp-plumber");
