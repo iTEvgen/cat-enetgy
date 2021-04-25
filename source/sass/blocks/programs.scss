@@ -5,26 +5,27 @@
   margin-bottom: 23px;
   padding: 27px 20px 0;
   font-family: "Oswald", sans-serif;
-  text-align: center;
   color: #ffffff;
 
-  background-image: url("../img/index-background-mobile@1x.webp");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto;
+  background-image: url("../img/index-background-mobile@1x.webp"), url("../img/backgound-matte.webp");
+  background-repeat: no-repeat, repeat-x;
+  background-position: top, top;
+  background-size: 100% auto, 100px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.webp");
+    background-image: url("../img/index-background-mobile@2x.webp"), url("../img/backgound-matte.webp");
   }
 }
 
 .program__header {
   @include margin-reset;
 
+  max-width: 350px;
   margin-bottom: 24px;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  text-align: center;
 }
 
 .programs__text {
@@ -38,7 +39,62 @@
   width: 280px;
   padding: 11px 0 11px;
   color: inherit;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #68b738;
+}
+
+@media (min-width: $mobile-height) {
+  .programs {
+    background-size: 400px, 381px;
+  }
+}
+
+@media (min-width: $table-width) {
+  .programs {
+    align-items: flex-start;
+    margin-bottom: 1px;
+    padding: 53px 30px 0 30px;
+    background-image: none;
+    color: #000000;
+  }
+
+  .program__header {
+    max-width: 450px;
+    margin-left: 87px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .programs__text {
+    margin-left: 87px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program__link {
+    width: 245px;
+    margin-left: 89px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .programs__wrapp-img {
+    align-self: center;
+    order: 3;
+    margin-top: -80px;
+    z-index: -1;
+  }
+
+  .programs__wrapp-img img {
+    display: block;
+    width: 708px;
+  }
 }

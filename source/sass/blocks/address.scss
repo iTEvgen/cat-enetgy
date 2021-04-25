@@ -30,4 +30,12 @@
 
 .address img {
   display: block;
+  width:100%;
+  height: 362px;
+}
+
+@media (min-width: $table-width) {
+  .address img {
+    height: 400px;
+  }
 }
