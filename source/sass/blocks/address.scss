@@ -35,7 +35,34 @@
 }
 
 @media (min-width: $table-width) {
+  .address {
+    padding-top: 64px;
+  }
+
+  .address__grid {
+    margin-bottom: 57px;
+    padding: 0 30px;
+  }
+
+  .address p {
+    padding-left: 41px;
+    font-size: 20px;
+    line-height:25px;
+  }
+
+  .address address {
+    padding-right: 41px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .address span {
+    display: block;
+    margin-top: 20px;
+  }
+
   .address img {
-    height: 400px;
+    height: 395px;
   }
 }
