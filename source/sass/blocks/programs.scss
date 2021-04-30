@@ -7,13 +7,13 @@
   font-family: "Oswald", sans-serif;
   color: #ffffff;
 
-  background-image: url("../img/index-background-mobile@1x.webp"), url("../img/backgound-matte.webp");
+  background-image: url("../img/index-background-mobile@1x.webp"), url("../img/background-matte.webp");
   background-repeat: no-repeat, repeat-x;
   background-position: top, top;
-  background-size: 100% auto, 100px;
+  background-size: 100% auto, 100% 100px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.webp"), url("../img/backgound-matte.webp");
+    background-image: url("../img/index-background-mobile@2x.webp"), url("../img/background-matte.webp");
   }
 }
 
@@ -47,7 +47,7 @@
 
 @media (min-width: $mobile-height) {
   .programs {
-    background-size: 400px, 381px;
+    background-size: 400px, auto 381px;
   }
 }
 
