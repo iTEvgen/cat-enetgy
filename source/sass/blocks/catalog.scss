@@ -227,3 +227,21 @@
   line-height: 20px;
   color: #ffffff;
 }
+
+@media (min-width: $table-width) {
+  .product-catalog__list {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .list-catalog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-catalog__items {
+    @include padding-reset;
+
+    width: 324px;
+  }
+}
