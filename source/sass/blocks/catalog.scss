@@ -39,7 +39,7 @@
   text-decoration: none;
 }
 
-.list-catalog__items picture {
+.list-catalog__box-img {
   flex-basis: 50%;
 }
 
@@ -91,6 +91,7 @@
   text-transform: uppercase;
   border: none;
   background-color: #68b738;
+  cursor: pointer;
 
   &--bagr {
     color: #444444;
@@ -255,13 +256,18 @@
   }
 
   .list-catalog__items {
-    width: 35%;
+    width: 45.7%;
     margin-right: auto;
     margin-bottom: 140px;
-    padding-right: 38px;
-    padding-left: 38px;
+    padding: 0 0 40px 0;
     border-top: none;
     background-color: #f2f2f2;
+
+    &--last-item {
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+      box-sizing: border-box;
+    }
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -273,11 +279,22 @@
   }
 
   .list-catalog__link {
+    position: relative;
     flex-direction: column;
+    margin-bottom: 34px;
+    padding-top: 163px;
+    padding-right: 36px;
+    padding-left: 36px;
   }
 
-  .list-catalog__link picture {
+  .list-catalog__box-img {
+    position: absolute;
+    top: -46px;
     align-self: center;
+
+    &--big {
+      top: -82px;
+    }
   }
 
   .list-catalog__img {
@@ -291,9 +308,13 @@
     }
   }
 
+  .list-catalog__box {
+    @include padding-reset;
+  }
+
   .list-catalog__header {
     width: 130px;
-    margin: 0 auto;
+    margin: 0 auto 21px auto;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -304,7 +325,43 @@
   }
 
   .list-catalog__table td {
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .list-catalog__button {
+    margin-top: auto;
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+
+  .plus {
+    width: 60px;
+    height: 60px;
+    margin-top: 54px;
+    margin-bottom: 49px;
+
+    &::before,
+    &::after {
+      top: 29px;
+      width: 60px;
+    }
+  }
+
+  .list-catalog__desc {
+    width: 175px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .list-catalog__text {
+    width: 175px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
   }
 }
