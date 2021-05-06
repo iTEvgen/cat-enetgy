@@ -45,6 +45,8 @@
 
 .list-catalog__img {
   display: block;
+  width: 140px;
+  height: 144px;
 }
 
 .list-catalog__box {
@@ -231,6 +233,7 @@
 
 @media (min-width: $table-width) {
   .product-catalog {
+    padding-top: 53px;
     border-bottom: none;
   }
 
@@ -248,10 +251,11 @@
   .list-catalog {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 137px;
   }
 
   .list-catalog__items {
-    min-width: 248px;
+    width: 35%;
     margin-right: auto;
     margin-bottom: 140px;
     padding-right: 38px;
@@ -274,6 +278,17 @@
 
   .list-catalog__link picture {
     align-self: center;
+  }
+
+  .list-catalog__img {
+    display: block;
+    width: 161px;
+    height: 172px;
+
+    &--big {
+      width: 195px;
+      height: 208px;
+    }
   }
 
   .list-catalog__header {
