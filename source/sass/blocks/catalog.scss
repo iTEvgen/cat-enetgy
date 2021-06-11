@@ -396,25 +396,42 @@
   .list-product__items {
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: baseline;
+    align-content: space-between;
+    min-height: calc(140px - 0.5px);
     margin-bottom: 0;
-    padding: 20px;
+    padding: 25px 35px 28px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
+    box-sizing: border-box;
+
+    &:last-of-type {
+    padding-bottom: 28px;
+  }
   }
 
   .list-product__header {
     @include margin-reset;
 
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: left;
   }
 
   .list-product__table {
     @include margin-reset;
 
+    margin-top: 4px;
+  }
+
+  .product-table {
     width: 50%;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+  }
+
+  .product-tadle__list td:nth-child(2) {
+    width: 93px;
   }
 
   .list-product__button {
