@@ -57,7 +57,7 @@
 .list-catalog__header {
   @include margin-reset;
 
-  width: 100%;
+  width: 70%;
   margin-bottom: 13px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -196,8 +196,8 @@
   line-height: 16px;
 }
 
-.list-product__table {
-  width: 50%;
+.product-table {
+  width: 100%;
   margin-bottom: 14px;
   line-height: 14px;
   border-collapse: collapse;
@@ -206,11 +206,10 @@
 .promo {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 289px;
-  padding-top: 64px;
-  padding-bottom: 26px;
+  min-height: 269px;
+  padding: 10px;
   text-align: center;
   background-color: #70b447;
   background-image: url("../img/gift-photo-mobile@1x.webp");
@@ -224,17 +223,25 @@
 }
 
 .promo svg {
-  margin-bottom: 47px;
+  margin-top: 54px;
   fill: #ffffff;
 }
 
 .promo__slogan {
+  @include margin-reset;
+
+  margin-top: 63px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
 @media (min-width: $table-width) {
+  .additional-products {
+    padding-top: 43px;
+    padding-bottom: 76px;
+  }
+
   .product-catalog {
     padding-top: 53px;
     border-bottom: none;
@@ -368,10 +375,6 @@
     text-align: center;
   }
 
-  .additional-products {
-    padding-top: 43px;
-  }
-
   .additional-products__header {
     margin-left: 37px;
     margin-bottom: 80px;
@@ -411,8 +414,8 @@
     box-sizing: border-box;
 
     &:last-of-type {
-    padding-bottom: 28px;
-  }
+      padding-bottom: 28px;
+    }
   }
 
   .list-product__header {
@@ -436,7 +439,7 @@
     text-align: right;
   }
 
-  .product-tadle__list td:nth-child(2) {
+  .product-table__list td:nth-child(2) {
     width: 93px;
   }
 
@@ -448,6 +451,18 @@
 
   .promo {
     flex-direction: row;
+    min-height: 180px;
+    text-align: left;
     background-image: url("../../img/gift-photo-tablet@1x.webp");
+  }
+
+  .promo svg {
+    margin-top: -10px;
+    margin-left: 81px;
+  }
+
+  .promo__slogan {
+    margin-top: 3px;
+    margin-left: 277px;
   }
 }
