@@ -206,16 +206,18 @@
 .promo {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  min-height: 269px;
-  padding: 10px;
+  min-height: 289px;
+  padding-top: 64px;
+  padding-bottom: 42px;
   text-align: center;
   background-color: #70b447;
   background-image: url("../img/gift-photo-mobile@1x.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% auto;
+  box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.webp");
@@ -223,14 +225,12 @@
 }
 
 .promo svg {
-  margin-top: 54px;
   fill: #ffffff;
 }
 
 .promo__slogan {
   @include margin-reset;
 
-  margin-top: 63px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -451,18 +451,19 @@
 
   .promo {
     flex-direction: row;
-    min-height: 180px;
+    min-height: 200px;
+    padding: 0;
+    padding-left: 90px;
+    padding-right: 125px;
     text-align: left;
     background-image: url("../../img/gift-photo-tablet@1x.webp");
   }
 
   .promo svg {
     margin-top: -10px;
-    margin-left: 81px;
   }
 
   .promo__slogan {
     margin-top: 3px;
-    margin-left: 277px;
   }
 }
