@@ -240,3 +240,54 @@
   line-height: 18px;
   color: #444444;
 }
+
+@media (min-width: $table-width) {
+  .forma {
+    padding-top: 53px;
+  }
+
+  .program-form {
+    padding-top: 29px;
+  }
+
+  .forma-header {
+    margin-left: 30px;
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .forma-slogan {
+    margin-left: 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-form__container {
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  .program-form__block {
+    width: 633px;
+    margin: 0 auto;
+  }
+
+  .program-form__items-text {
+    margin-bottom: 20px;
+    padding-left: 4px;
+  }
+
+  .program-form__title {
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-form__text {
+    padding: 9px 18px 11px 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
