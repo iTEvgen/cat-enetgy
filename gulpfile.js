@@ -7,7 +7,7 @@ var webp = require("gulp-webp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
-var sass = require("gulp-sass");
+var sass = require("gulp-sass")(require("sass"));
 var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -23,7 +23,7 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
